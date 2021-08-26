@@ -17,11 +17,11 @@ body {
 }
 
 body {
-	background: url("https://eventfinity-production-assets.s3.amazonaws.com/materials/743361/original/Games-Background.png");
+	background: url("https://wallpaperaccess.com/full/3551101.png");
 	background-size: cover;
 	font-family: 'Arial Black';
-	color: #ffffff;
-	font-size: 4.5vw;
+	color: #111;
+	font-size: 1rem;
 }
 
 .container {
@@ -42,7 +42,7 @@ body {
 .game-title {
 	font-family: 'Arial Black';
 	margin: 0;
-	font-size: 6vw;
+	font-size: 2rem;
 }
 
 .game-play-area {
@@ -60,9 +60,11 @@ body {
 .deck {
 	width: 70vh;
 	height: 70vh;
-	background: #ffffff;
+	background: #a3d6f1;
+    background: #6891da;
+    background: #81D6E3;
 	padding: .2rem;
-	border-radius: 4px;
+	border-radius: 15px;
 	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
 	display: flex;
 	flex-wrap: wrap;
@@ -75,12 +77,12 @@ body {
 	height: 14vh;
 	width: 14vh;
 	margin: .5vw;
-	background: url("https://eventfinity-production-assets.s3.amazonaws.com/materials/743501/original/Card-Back.png");
+	background: url("../images/pokeball.png");
 	background-color: #1da6df;
-	background-size: contain;
+	background-size: cover;
 	font-size: 0;
 	color: #ffffff;
-	border-radius: 5px;
+	border-radius: 15px;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -153,6 +155,17 @@ body {
 	cursor: pointer;
 }
 
+.score-panel .restart:active {
+	-webkit-animation-name: button-push;
+	animation-name: button-push;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
 .fa-star {
 	color: #FFD700;
 }
@@ -162,14 +175,14 @@ body {
 	margin: 0 1vw;
 }
 
-.deck .card.open.bucket, .deck .card.match.bucket {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/757931/original/Blue_Can.png'); background-size: contain; background-color: #0067B6;}
-.deck .card.open.spray-paint, .deck .card.match.spray-paint {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/757951/original/Orange_SprayCan.png'); background-size: contain; background-color: #FF4B00;}
-.deck .card.open.roller, .deck .card.match.roller {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/758001/original/Yellow_Roller.png'); background-size: contain; background-color: #FFAD00;}
-.deck .card.open.tape, .deck .card.match.tape {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/757941/original/Green_Tape.png'); background-size: contain; background-color: #00953A;}
-.deck .card.open.samples, .deck .card.match.samples {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/757961/original/Pink_PaintChipFan.png'); background-size: contain; background-color: #FF30BE;}
-.deck .card.open.paintbrush, .deck .card.match.paintbrush {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/757971/original/Purple_PaintTrowel.png'); background-size: contain; background-color: #6F2496;}
-.deck .card.open.tape-measure, .deck .card.match.tape-measure  {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/757991/original/Teal_TapeMeasure.png'); background-size: contain; background-color: #00B6C1;}
-.deck .card.open.paint-sprayer, .deck .card.match.paint-sprayer {background: url('https://eventfinity-production-assets.s3.amazonaws.com/materials/757981/original/Red_SprayGun.png'); background-size: contain; background-color: #FF0021;}
+.deck .card.open.bucket, .deck .card.match.bucket {background: url('../images/bulbasaur.png'); background-size: contain; background-color: #0067B6;}
+.deck .card.open.spray-paint, .deck .card.match.spray-paint {background: url('../images/charmander.png'); background-size: contain; background-color: #FF4B00;}
+.deck .card.open.roller, .deck .card.match.roller {background: url('../images/ghastly.png'); background-size: contain; background-color: #FFAD00;}
+.deck .card.open.tape, .deck .card.match.tape {background: url('../images/gyrados.png'); background-size: contain; background-color: #00953A;}
+.deck .card.open.samples, .deck .card.match.samples {background: url('../images/magicarp.png'); background-size: contain; background-color: #FF30BE;}
+.deck .card.open.paintbrush, .deck .card.match.paintbrush {background: url('../images/oddish.png'); background-size: contain; background-color: #6F2496;}
+.deck .card.open.tape-measure, .deck .card.match.tape-measure  {background: url('../images/pikachu.png'); background-size: contain; background-color: #00B6C1;}
+.deck .card.open.paint-sprayer, .deck .card.match.paint-sprayer {background: url('../images/squirtle.png'); background-size: contain; background-color: #FF0021;}
 
 /*
  * Styles for congratulations modal
@@ -198,12 +211,12 @@ body {
 	padding: 5%;
 	background: #ffffff;
 	border-radius: 5px;
-	width: 85%;
+	max-width: 70%;
 	position: relative;
 	transition: all 5s ease-in-out;
 	font-family: 'Arial Black';
 	color: #333;
-	font-size: 6vh;
+	font-size: 1rem;
 	text-align: center;
 }
   
@@ -211,7 +224,7 @@ body {
 	margin-top: 0;
 	color: #333;
 	font-family: 'Arial Black';
-	font-size: 8vh;
+	font-size: 1.2rem;
 }
 
 .popup .close {
@@ -247,14 +260,26 @@ body {
 
 #play-again {
 	background-color: #141214;
-	padding: 0.7% 1%;
-	font-size: 6vh;
-	display: block;
+	padding: 12px 38px;
+	font-size: 1rem;
 	margin: 0 auto;
-	width: 50%;
 	font-family: 'Arial Black';
 	color: #ffffff;
-	border-radius: 5px;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+#play-again:hover {
+	-webkit-animation-name: button-push;
+	animation-name: button-push;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	opacity: .7;
 }
 
 /* animations */
@@ -328,6 +353,16 @@ body {
 	}
 }
 
+@keyframes button-push {
+	50% {
+	  -webkit-transform: scale(0.8);
+	  transform: scale(0.8);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+	  transform: scale(1);
+	}
+  }
 
 /****** Media queries
 ***************************/
