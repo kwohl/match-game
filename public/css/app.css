@@ -19,7 +19,7 @@ body {
 body {
 	background: url("https://wallpaperaccess.com/full/3551101.png");
 	background-size: cover;
-	font-family: 'Arial Black';
+	font-family: 'Arial Black', sans-serif;
 	color: #111;
 	font-size: 1rem;
 }
@@ -167,7 +167,7 @@ body {
 }
 
 .fa-star {
-	color: #FFD700;
+	color: #FFD26C;
 }
 
 .timer {
@@ -175,14 +175,14 @@ body {
 	margin: 0 1vw;
 }
 
-.deck .card.open.bucket, .deck .card.match.bucket {background: url('../images/bulbasaur.png'); background-size: contain; background-color: #0067B6;}
-.deck .card.open.spray-paint, .deck .card.match.spray-paint {background: url('../images/charmander.png'); background-size: contain; background-color: #FF4B00;}
-.deck .card.open.roller, .deck .card.match.roller {background: url('../images/ghastly.png'); background-size: contain; background-color: #FFAD00;}
-.deck .card.open.tape, .deck .card.match.tape {background: url('../images/gyrados.png'); background-size: contain; background-color: #00953A;}
-.deck .card.open.samples, .deck .card.match.samples {background: url('../images/magicarp.png'); background-size: contain; background-color: #FF30BE;}
-.deck .card.open.paintbrush, .deck .card.match.paintbrush {background: url('../images/oddish.png'); background-size: contain; background-color: #6F2496;}
-.deck .card.open.tape-measure, .deck .card.match.tape-measure  {background: url('../images/pikachu.png'); background-size: contain; background-color: #00B6C1;}
-.deck .card.open.paint-sprayer, .deck .card.match.paint-sprayer {background: url('../images/squirtle.png'); background-size: contain; background-color: #FF0021;}
+.deck .card.open.bucket, .deck .card.match.bucket {background: url('../images/bulbasaur.png'); background-size: contain; background-color: #78d9ad;}
+.deck .card.open.spray-paint, .deck .card.match.spray-paint {background: url('../images/charmander.png'); background-size: contain; background-color: #eeb083;}
+.deck .card.open.roller, .deck .card.match.roller {background: url('../images/ghastly.png'); background-size: contain; background-color: #332e2e;}
+.deck .card.open.tape, .deck .card.match.tape {background: url('../images/gyrados.png'); background-size: contain; background-color: #54b9e8;}
+.deck .card.open.samples, .deck .card.match.samples {background: url('../images/magicarp.png'); background-size: contain; background-color: #f67b57;}
+.deck .card.open.paintbrush, .deck .card.match.paintbrush {background: url('../images/oddish.png'); background-size: contain; background-color: #56829b;}
+.deck .card.open.tape-measure, .deck .card.match.tape-measure  {background: url('../images/pikachu.png'); background-size: contain; background-color: #fce57d;}
+.deck .card.open.paint-sprayer, .deck .card.match.paint-sprayer {background: url('../images/squirtle.png'); background-size: contain; background-color: #84c4d6;}
 
 /*
  * Styles for congratulations modal
@@ -214,7 +214,7 @@ body {
 	max-width: 70%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Arial Black';
+	/* font-family: 'Arial Black'; */
 	color: #333;
 	font-size: 1rem;
 	text-align: center;
@@ -223,7 +223,7 @@ body {
 .popup span.popup-title {
 	margin-top: 0;
 	color: #333;
-	font-family: 'Arial Black';
+	/* font-family: 'Arial Black'; */
 	font-size: 1.2rem;
 }
 
@@ -259,7 +259,7 @@ body {
 }
 
 #play-again {
-	background-color: #141214;
+	background-color: #35487f;
 	padding: 12px 38px;
 	font-size: 1rem;
 	margin: 0 auto;
@@ -268,6 +268,7 @@ body {
 	border-radius: 30px;
 	cursor: pointer;
 	transition: all .3s ease-in-out;
+	border: none;
 }
 
 #play-again:hover {
@@ -279,7 +280,6 @@ body {
 	animation-timing-function: linear;
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
-	opacity: .7;
 }
 
 /* animations */
